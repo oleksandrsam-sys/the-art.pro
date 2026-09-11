@@ -19,16 +19,22 @@ function Logo({width = 165}: {width?: number}) {
   return <img src="/the-art-pro-logo.svg" alt="the-art.pro" width={width} style={{height: 'auto', display: 'block'}} />
 }
 
+function IsanLogo() {
+  return <img src="/isan-header-logo.svg" alt="ISAN" className="subprojectHeaderLogo isanHeaderLogo" />
+}
+
 export default function IsanPage() {
   return (
     <main className="isanLanding">
       <header className="topbar">
-        <div className="isanBrandWrap">
-          <a href="/" className="logoLink"><Logo /></a>
-          <div className="isanSubBrand" aria-label="ISAN by THE ART.PRO"><i /><b>ISAN</b><small>BY THE ART.PRO</small></div>
-        </div>
+        <a href="#top" className="subprojectLogoLink" aria-label="ISAN"><IsanLogo /></a>
         <nav className="nav" aria-label="ISAN navigation">
-          <a href="#why">Про ISAN</a><a href="#convectors">Конвектори</a><a href="#mistakes">Помилки</a><a href="#designers">Для дизайнерів</a><a href="#technical">Technical</a>
+          <a className="parentProjectLink" href="/">← the-art.pro</a>
+          <a href="#why">Про ISAN</a>
+          <a href="#convectors">Конвектори</a>
+          <a href="#mistakes">Помилки</a>
+          <a href="#designers">Для дизайнерів</a>
+          <a href="#technical">Technical</a>
         </nav>
         <a className="navCta isanCta" href="#isan-form">Надіслати планування <span>↗</span></a>
       </header>
@@ -37,7 +43,6 @@ export default function IsanPage() {
         <div className="isanHeroVisual" aria-hidden="true"><div className="isanHeroGlass"><i /><i /><i /><i /></div><div className="isanHeroFloor" /><div className="isanHeroGrille">{Array.from({length: 30}).map((_, i) => <i key={i} />)}</div></div>
         <div className="isanHeroShade" />
         <div className="isanHeroCopy">
-          <a className="backLink" href="/">← THE ART.PRO</a>
           <p className="eyebrow isanKicker">ISAN · PRODUCT DIRECTION BY THE ART.PRO</p>
           <h1>ISAN для<br />панорамного<br /><span>вікна.</span></h1>
           <p className="lead">Внутрішньопідлогові конвектори та дизайнерське опалення, інтегровані в архітектуру інтерʼєру — від планування до монтажної логіки.</p>
