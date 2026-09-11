@@ -84,12 +84,15 @@ export default function Home() {
       <header className="topbar">
         <a href="#top" className="logoLink"><Logo /></a>
         <nav className="nav" aria-label="Головна навігація">
+          <a href="#platform">Про нас</a>
+          <a href="#b2b">B2B</a>
           <a href="#design-heating">Дизайн Опалення</a>
           <a className="isanNav" href="/isan">ISAN</a>
           <a className="revectNav" href="/revect">RE:VECT</a>
           <a href="#santeh">Santeh & Decor</a>
           <a href="#fig-system">FIG.system</a>
           <a href="#brands">Brands</a>
+          <a href="#contacts">Контакти</a>
         </nav>
         <a className="navCta" href="#project-form">Надіслати проєкт <span>↗</span></a>
       </header>
@@ -135,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="audience section">
+      <section className="audience section" id="b2b">
         <div className="sectionHeader">
           <div><p className="kicker">02 / B2B FIRST</p><h2>Для професійного<br />ринку.</h2></div>
           <p>Пріоритет — ті, хто формує, проєктує, будує та комплектує простір.</p>
@@ -265,9 +268,9 @@ export default function Home() {
         </form>
       </section>
 
-      <footer className="footer">
+      <footer className="footer" id="contacts">
         <div className="footerMain"><Logo width={205} /><p>B2B platform<br />Kyiv · Ukraine</p></div>
-        <div className="footerNav"><a href="#design-heating">Дизайн Опалення</a><a className="isanNav" href="/isan">ISAN</a><a className="revectNav" href="/revect">RE:VECT</a><a href="#santeh">Santeh & Decor</a><a href="#fig-system">FIG.system</a></div>
+        <div className="footerNav"><a href="#platform">Про нас</a><a href="#b2b">B2B</a><a href="#design-heating">Дизайн Опалення</a><a className="isanNav" href="/isan">ISAN</a><a className="revectNav" href="/revect">RE:VECT</a><a href="#santeh">Santeh & Decor</a><a href="#fig-system">FIG.system</a><a href="#brands">Brands</a><a href="#contacts">Контакти</a></div>
         <div className="footerBottom"><span>© 2026 THE ART.PRO</span><a href="/studio">CMS / STUDIO</a><a href="#top">UP ↑</a></div>
       </footer>
     </main>
