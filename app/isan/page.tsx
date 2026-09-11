@@ -1,3 +1,5 @@
+import './isan.css'
+
 const isanBenefits = [
   ['01', 'Panoramic glazing', 'Рішення для великих вікон, де опалення має працювати вздовж скла і не ламати композицію інтерʼєру.'],
   ['02', 'Floor integration', 'Корпус конвектора інтегруємо в конструкцію підлоги, а решітку — в чистову геометрію приміщення.'],
@@ -23,7 +25,7 @@ export default function IsanPage() {
         <a className="navCta isanCta" href="#isan-form">Надіслати планування <span>↗</span></a>
       </header>
 
-      <section className="isanHero">
+      <section className="isanHero" id="top">
         <div className="isanHeroVisual" aria-hidden="true">
           <div className="isanHeroGlass"><i /><i /><i /><i /></div>
           <div className="isanHeroFloor" />
