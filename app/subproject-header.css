@@ -1,0 +1,9 @@
+.subprojectLogoLink{display:flex;align-items:center;flex:0 0 auto;min-width:122px}
+.subprojectHeaderLogo{display:block;height:auto;object-fit:contain}
+.isanHeaderLogo{width:118px;max-height:54px}
+.revectHeaderLogo{width:190px;max-height:48px}
+.parentProjectLink{font-weight:700!important;letter-spacing:.01em!important;color:#1b1f22!important}
+.parentProjectLink:before{content:""}
+.isanLanding .footer img,.revectLanding .footer img{filter:none!important}
+@media(max-width:1100px){.revectHeaderLogo{width:160px}.isanHeaderLogo{width:105px}.parentProjectLink{font-size:10px}}
+@media(max-width:900px){.subprojectLogoLink{min-width:0}.revectHeaderLogo{width:170px}.isanHeaderLogo{width:110px}}
