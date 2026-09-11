@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import './nav-overrides.css'
+import './subproject-header.css'
 
 export const metadata: Metadata = {
   title: 'THE ART.PRO — B2B Platform · THE ART · ISAN · RE:VECT · Santeh & Decor · FIG.system',
