@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import './nav-overrides.css'
 
 export const metadata: Metadata = {
-  title: 'THE ART.PRO — B2B Platform · Дизайн Опалення · ISAN · RE:VECT · Santeh & Decor · FIG.system',
+  title: 'THE ART.PRO — B2B Platform · THE ART · ISAN · RE:VECT · Santeh & Decor · FIG.system',
   description: 'THE ART.PRO — B2B-платформа дизайнерських, інженерних та інтерʼєрних рішень для дизайнерів, архітекторів, будівельних компаній та професійних партнерів.',
 }
 
