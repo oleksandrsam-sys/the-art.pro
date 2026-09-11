@@ -7,8 +7,8 @@ const isanBenefits = [
   ['04', 'Project selection', 'Підбір починається з плану, скління, теплового навантаження, фінішу підлоги та сценарію керування.'],
 ]
 
-function Logo() {
-  return <span className="wordmark" aria-label="the-art.pro"><span>the-art.</span><b>pro</b></span>
+function Logo({width = 165}: {width?: number}) {
+  return <img src="/the-art-pro-logo.svg" alt="the-art.pro" width={width} style={{height: 'auto', display: 'block'}} />
 }
 
 export default function IsanPage() {
@@ -110,7 +110,7 @@ export default function IsanPage() {
       </section>
 
       <footer className="footer">
-        <div className="footerBrand"><Logo /><p>ISAN special direction inside THE ART.PRO.</p></div>
+        <div className="footerBrand"><Logo width={260} /><p>ISAN special direction inside THE ART.PRO.</p></div>
         <div className="footerBottom"><span>© 2026 THE ART.PRO · ISAN</span><a href="/">THE ART.PRO</a><a href="#top">UP ↑</a></div>
       </footer>
     </main>
