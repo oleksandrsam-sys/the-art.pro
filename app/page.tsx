@@ -60,12 +60,8 @@ const services = [
   },
 ]
 
-function Logo() {
-  return (
-    <span className="wordmark" aria-label="the-art.pro">
-      <span>the-art.</span><b>pro</b>
-    </span>
-  )
+function Logo({width = 165}: {width?: number}) {
+  return <img src="/the-art-pro-logo.svg" alt="the-art.pro" width={width} style={{height: 'auto', display: 'block'}} />
 }
 
 export default function Home() {
@@ -233,7 +229,7 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        <div className="footerBrand"><Logo /><p>B2B platform for design, engineering & interior solutions.</p></div>
+        <div className="footerBrand"><Logo width={260} /><p>B2B platform for design, engineering & interior solutions.</p></div>
         <div className="footerDirections"><span>Heating</span><a className="isanFooter" href="/isan">ISAN</a><span>Santeh & Decor</span><span>Engineering</span></div>
         <div className="footerBottom"><span>© 2026 THE ART.PRO · KYIV</span><a href="/studio">CMS / STUDIO</a><a href="#top">UP ↑</a></div>
       </footer>
