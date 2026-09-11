@@ -26,16 +26,22 @@ function Logo({width = 165}: {width?: number}) {
   return <img src="/the-art-pro-logo.svg" alt="the-art.pro" width={width} style={{height: 'auto', display: 'block'}} />
 }
 
+function RevectLogo() {
+  return <img src="/revect-header-logo.svg" alt="RE:VECT SYSTEM" className="subprojectHeaderLogo revectHeaderLogo" />
+}
+
 export default function RevectPage() {
   return (
     <main className="revectLanding">
       <header className="topbar">
-        <div className="revectBrandWrap">
-          <a href="/" className="logoLink"><Logo /></a>
-          <div className="subBrandLock" aria-label="RE:VECT SYSTEM by THE ART.PRO"><b>RE:VECT</b><small>SYSTEM</small></div>
-        </div>
+        <a href="#top" className="subprojectLogoLink" aria-label="RE:VECT SYSTEM"><RevectLogo /></a>
         <nav className="nav" aria-label="RE:VECT navigation">
-          <a href="#system">Про систему</a><a href="#modules">Сервіси</a><a href="#panorama">re:panorama</a><a href="#process">Як працюємо</a><a href="#revect-form">Контакти</a>
+          <a className="parentProjectLink" href="/">← the-art.pro</a>
+          <a href="#system">Про RE:VECT</a>
+          <a href="#modules">Сервіси</a>
+          <a href="#panorama">re:panorama</a>
+          <a href="#process">Як працюємо</a>
+          <a href="#revect-form">Контакти</a>
         </nav>
         <a className="navCta revectCta" href="#revect-form">Надіслати фото <span>↗</span></a>
       </header>
@@ -44,7 +50,6 @@ export default function RevectPage() {
         <div className="revectHeroVisual" aria-hidden="true"><div className="rvGrid" /><div className="rvOld"><span>BEFORE</span></div><div className="rvAxis" /><div className="rvNew"><span>AFTER</span></div><div className="rvHeroGrille">{Array.from({length: 30}).map((_, i) => <i key={i} />)}</div></div>
         <div className="revectHeroShade" />
         <div className="revectHeroCopy">
-          <a className="backLink" href="/">← THE ART.PRO</a>
           <p className="eyebrow revectKicker">RE:VECT SYSTEM · SERVICE BY THE ART.PRO</p>
           <h1>Не міняти все.<br /><span>Оновити те, що є.</span></h1>
           <p className="lead">Система відновлення, модернізації та візуального оновлення внутрішньопідлогових конвекторів — без зайвого демонтажу і без руйнування готового інтерʼєру.</p>
