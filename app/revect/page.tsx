@@ -27,7 +27,7 @@ function Logo({width = 165}: {width?: number}) {
 }
 
 function RevectLogo() {
-  return <img src="/revect-header-logo.svg" alt="RE:VECT SYSTEM" className="subprojectHeaderLogo revectHeaderLogo" />
+  return <img src="/revect-system-logo.webp" alt="RE:VECT SYSTEM" className="subprojectHeaderLogo revectHeaderLogo" />
 }
 
 export default function RevectPage() {
